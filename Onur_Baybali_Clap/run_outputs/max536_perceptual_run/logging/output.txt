@@ -1,0 +1,89 @@
+ 2025-11-06 at 23:35:19 | Training setting:
+{'data_args': {'batch_size': 32,
+               'num_workers': 0,
+               'test_pkl': 'perceptual_model/outputs/test_perceptual_features_max_proper.pkl',
+               'train_pkl': 'perceptual_model/outputs/train_perceptual_features_max_proper.pkl',
+               'val_pkl': 'perceptual_model/outputs/validation_perceptual_features_max_proper.pkl'},
+ 'device': 'mps',
+ 'dist_args': {'dist_url': 'env://', 'distributed': False, 'world_size': 1},
+ 'embed_regularization': True,
+ 'embed_size': 1024,
+ 'n_jobs': 8,
+ 'optim_args': {'betas': [0.9, 0.999],
+                'eps': 1e-08,
+                'lr': 5e-05,
+                'momentum': 0.9,
+                'optimizer_name': 'adam',
+                'warmup_epochs': 2,
+                'warmup_steps': 0},
+ 'perceptual_args': {'feature_dim': 536},
+ 'resume': False,
+ 'seed': 20,
+ 'temp': 0.07,
+ 'text_encoder_args': {'freeze': False, 'type': 'bert-base-uncased'},
+ 'training': {'clip_grad': 2, 'dropout': 0.2, 'epochs': 15}}
+ 2025-11-06 at 23:35:19 | Total number of parameters: 112328193
+ 2025-11-06 at 23:35:19 | Size of training set: 19185, size of batches: 600
+ 2025-11-06 at 23:35:19 | Training for epoch [1]
+ 2025-11-06 at 23:36:59 | Epoch [1] - Loss: 2.817, Time: 99.9
+ 2025-11-06 at 23:37:10 | Perceptual-Only: Caption to audio: r1: 2.13, r5: 8.97, r10: 15.59, r50: 42.76, medr: 67.00, meanr: 126.21, mAP10: 5.170
+ 2025-11-06 at 23:37:10 | Perceptual-Only: Audio to caption: r1: 1.44, r5: 8.24, r10: 12.93, r50: 37.64, medr: 92.00, meanr: 236.56, mAP10: 1.382
+ 2025-11-06 at 23:37:11 | Training for epoch [2]
+ 2025-11-06 at 23:38:49 | Epoch [2] - Loss: 1.723, Time: 97.7
+ 2025-11-06 at 23:38:59 | Perceptual-Only: Caption to audio: r1: 2.91, r5: 10.48, r10: 18.14, r50: 48.62, medr: 53.00, meanr: 109.64, mAP10: 6.487
+ 2025-11-06 at 23:38:59 | Perceptual-Only: Audio to caption: r1: 3.07, r5: 11.40, r10: 18.01, r50: 44.35, medr: 65.00, meanr: 182.57, mAP10: 2.320
+ 2025-11-06 at 23:39:00 | Training for epoch [3]
+ 2025-11-06 at 23:40:38 | Epoch [3] - Loss: 1.034, Time: 97.7
+ 2025-11-06 at 23:40:49 | Perceptual-Only: Caption to audio: r1: 3.43, r5: 12.76, r10: 21.36, r50: 52.57, medr: 46.00, meanr: 102.79, mAP10: 7.688
+ 2025-11-06 at 23:40:49 | Perceptual-Only: Audio to caption: r1: 3.83, r5: 12.74, r10: 19.25, r50: 47.41, medr: 59.00, meanr: 155.91, mAP10: 2.645
+ 2025-11-06 at 23:40:50 | Training for epoch [4]
+ 2025-11-06 at 23:42:27 | Epoch [4] - Loss: 0.576, Time: 97.7
+ 2025-11-06 at 23:42:38 | Perceptual-Only: Caption to audio: r1: 3.83, r5: 13.37, r10: 21.30, r50: 51.05, medr: 48.00, meanr: 105.97, mAP10: 8.122
+ 2025-11-06 at 23:42:38 | Perceptual-Only: Audio to caption: r1: 3.16, r5: 13.51, r10: 21.26, r50: 50.10, medr: 50.00, meanr: 168.20, mAP10: 2.788
+ 2025-11-06 at 23:42:38 | Training for epoch [5]
+ 2025-11-06 at 23:44:15 | Epoch [5] - Loss: 0.348, Time: 97.6
+ 2025-11-06 at 23:44:26 | Perceptual-Only: Caption to audio: r1: 3.77, r5: 13.16, r10: 20.90, r50: 50.79, medr: 49.00, meanr: 105.97, mAP10: 7.991
+ 2025-11-06 at 23:44:26 | Perceptual-Only: Audio to caption: r1: 3.45, r5: 12.84, r10: 20.11, r50: 47.61, medr: 54.00, meanr: 148.86, mAP10: 2.681
+ 2025-11-06 at 23:44:26 | Training for epoch [6]
+ 2025-11-06 at 23:46:03 | Epoch [6] - Loss: 0.242, Time: 97.8
+ 2025-11-06 at 23:46:13 | Perceptual-Only: Caption to audio: r1: 3.62, r5: 13.05, r10: 21.11, r50: 50.80, medr: 49.00, meanr: 109.50, mAP10: 7.904
+ 2025-11-06 at 23:46:13 | Perceptual-Only: Audio to caption: r1: 3.35, r5: 13.31, r10: 20.69, r50: 48.08, medr: 55.00, meanr: 163.03, mAP10: 2.634
+ 2025-11-06 at 23:46:13 | Training for epoch [7]
+ 2025-11-06 at 23:47:51 | Epoch [7] - Loss: 0.176, Time: 97.7
+ 2025-11-06 at 23:48:01 | Perceptual-Only: Caption to audio: r1: 3.91, r5: 12.80, r10: 20.75, r50: 51.07, medr: 49.00, meanr: 108.57, mAP10: 7.949
+ 2025-11-06 at 23:48:01 | Perceptual-Only: Audio to caption: r1: 3.93, r5: 12.45, r10: 20.50, r50: 47.22, medr: 57.00, meanr: 152.74, mAP10: 2.584
+ 2025-11-06 at 23:48:02 | Training for epoch [8]
+ 2025-11-06 at 23:49:40 | Epoch [8] - Loss: 0.132, Time: 97.8
+ 2025-11-06 at 23:49:50 | Perceptual-Only: Caption to audio: r1: 3.91, r5: 14.14, r10: 21.11, r50: 51.40, medr: 48.00, meanr: 108.01, mAP10: 8.297
+ 2025-11-06 at 23:49:50 | Perceptual-Only: Audio to caption: r1: 4.79, r5: 14.37, r10: 21.26, r50: 50.00, medr: 50.00, meanr: 151.09, mAP10: 2.870
+ 2025-11-06 at 23:49:51 | Training for epoch [9]
+ 2025-11-06 at 23:51:29 | Epoch [9] - Loss: 0.106, Time: 97.8
+ 2025-11-06 at 23:51:39 | Perceptual-Only: Caption to audio: r1: 3.89, r5: 13.39, r10: 21.38, r50: 51.15, medr: 48.00, meanr: 105.09, mAP10: 8.174
+ 2025-11-06 at 23:51:39 | Perceptual-Only: Audio to caption: r1: 4.12, r5: 13.41, r10: 21.17, r50: 49.23, medr: 53.00, meanr: 146.97, mAP10: 2.811
+ 2025-11-06 at 23:51:39 | Training for epoch [10]
+ 2025-11-06 at 23:53:17 | Epoch [10] - Loss: 0.079, Time: 97.8
+ 2025-11-06 at 23:53:27 | Perceptual-Only: Caption to audio: r1: 4.23, r5: 13.93, r10: 21.34, r50: 50.69, medr: 49.00, meanr: 109.54, mAP10: 8.503
+ 2025-11-06 at 23:53:27 | Perceptual-Only: Audio to caption: r1: 3.64, r5: 14.18, r10: 21.46, r50: 48.08, medr: 54.00, meanr: 150.42, mAP10: 2.890
+ 2025-11-06 at 23:53:27 | Training for epoch [11]
+ 2025-11-06 at 23:55:05 | Epoch [11] - Loss: 0.066, Time: 97.9
+ 2025-11-06 at 23:55:15 | Perceptual-Only: Caption to audio: r1: 4.02, r5: 14.79, r10: 22.74, r50: 52.16, medr: 46.00, meanr: 105.44, mAP10: 8.650
+ 2025-11-06 at 23:55:15 | Perceptual-Only: Audio to caption: r1: 3.93, r5: 14.46, r10: 21.65, r50: 49.33, medr: 54.00, meanr: 143.79, mAP10: 2.981
+ 2025-11-06 at 23:55:15 | Training for epoch [12]
+ 2025-11-06 at 23:56:53 | Epoch [12] - Loss: 0.050, Time: 97.9
+ 2025-11-06 at 23:57:03 | Perceptual-Only: Caption to audio: r1: 4.31, r5: 14.66, r10: 22.72, r50: 51.67, medr: 46.00, meanr: 104.31, mAP10: 8.874
+ 2025-11-06 at 23:57:03 | Perceptual-Only: Audio to caption: r1: 4.79, r5: 14.08, r10: 22.89, r50: 50.67, medr: 48.00, meanr: 141.19, mAP10: 3.164
+ 2025-11-06 at 23:57:04 | Training for epoch [13]
+ 2025-11-06 at 23:58:42 | Epoch [13] - Loss: 0.045, Time: 97.9
+ 2025-11-06 at 23:58:52 | Perceptual-Only: Caption to audio: r1: 4.16, r5: 14.69, r10: 22.93, r50: 52.80, medr: 45.00, meanr: 103.65, mAP10: 8.826
+ 2025-11-06 at 23:58:52 | Perceptual-Only: Audio to caption: r1: 4.41, r5: 14.37, r10: 23.37, r50: 51.15, medr: 47.00, meanr: 140.50, mAP10: 3.086
+ 2025-11-06 at 23:58:52 | Training for epoch [14]
+ 2025-11-07 at 00:00:30 | Epoch [14] - Loss: 0.041, Time: 97.8
+ 2025-11-07 at 00:00:40 | Perceptual-Only: Caption to audio: r1: 4.31, r5: 14.94, r10: 23.22, r50: 53.07, medr: 45.00, meanr: 103.72, mAP10: 8.988
+ 2025-11-07 at 00:00:40 | Perceptual-Only: Audio to caption: r1: 4.21, r5: 15.04, r10: 22.80, r50: 51.25, medr: 47.00, meanr: 140.01, mAP10: 3.085
+ 2025-11-07 at 00:00:40 | Training for epoch [15]
+ 2025-11-07 at 00:02:18 | Epoch [15] - Loss: 0.040, Time: 97.9
+ 2025-11-07 at 00:02:28 | Perceptual-Only: Caption to audio: r1: 4.31, r5: 14.90, r10: 23.35, r50: 53.24, medr: 45.00, meanr: 103.70, mAP10: 9.014
+ 2025-11-07 at 00:02:28 | Perceptual-Only: Audio to caption: r1: 4.31, r5: 14.75, r10: 23.37, r50: 51.92, medr: 47.00, meanr: 139.87, mAP10: 3.080
+ 2025-11-07 at 00:02:28 | Evaluation start...
+ 2025-11-07 at 00:02:39 | Perceptual-Only: Caption to audio: r1: 5.01, r5: 15.52, r10: 23.90, r50: 52.42, medr: 45.00, meanr: 106.43, mAP10: 9.678
+ 2025-11-07 at 00:02:39 | Perceptual-Only: Audio to caption: r1: 4.69, r5: 14.55, r10: 22.20, r50: 52.06, medr: 47.00, meanr: 162.82, mAP10: 2.864

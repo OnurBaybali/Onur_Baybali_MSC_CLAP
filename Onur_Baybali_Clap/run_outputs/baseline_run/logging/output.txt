@@ -1,0 +1,296 @@
+ 2025-06-29 at 22:15:09 | Training setting:
+{'audio_args': {'f_max': 14000,
+                'f_min': 50,
+                'hop_length': 320,
+                'max_length': 10,
+                'mono': True,
+                'n_fft': 1024,
+                'n_mels': 64,
+                'sr': 32000},
+ 'audio_encoder_args': {'freeze': False,
+                        'model': 'htsat',
+                        'pretrained': False,
+                        'spec_augment': True,
+                        'type': 'transformer'},
+ 'blacklist': 'data/json_files/blacklist/',
+ 'data_args': {'batch_size': 32, 'num_workers': 10},
+ 'device': 'mps',
+ 'dist_args': {'dist_url': 'env://', 'distributed': False, 'world_size': 1},
+ 'embed_regularization': True,
+ 'embed_size': 1024,
+ 'json_files': ['retrieval/data/Clotho/json_files/train.json'],
+ 'optim_args': {'betas': [0.9, 0.999],
+                'eps': 1e-08,
+                'lr': 5e-05,
+                'momentum': 0.9,
+                'optimizer_name': 'adam',
+                'warmup_epochs': 2,
+                'warmup_steps': 0},
+ 'resume': False,
+ 'seed': 20,
+ 'temp': 0.07,
+ 'text_encoder_args': {'freeze': False, 'type': 'bert-base-uncased'},
+ 'training': {'clip_grad': 2,
+              'dropout': 0.2,
+              'epochs': 15,
+              'spec_augmentation': False}}
+ 2025-06-29 at 22:15:09 | Total numer of parameters: 143890904
+ 2025-06-29 at 22:15:09 | Size of training set: 19185, size of batches: 599
+ 2025-06-29 at 22:15:09 | Training for epoch [1]
+ 2025-07-27 at 15:46:28 | Training setting:
+{'audio_args': {'f_max': 14000,
+                'f_min': 50,
+                'hop_length': 320,
+                'max_length': 10,
+                'mono': True,
+                'n_fft': 1024,
+                'n_mels': 64,
+                'sr': 32000},
+ 'audio_encoder_args': {'freeze': False,
+                        'model': 'htsat',
+                        'pretrained': False,
+                        'spec_augment': True,
+                        'type': 'transformer'},
+ 'blacklist': 'data/json_files/blacklist/',
+ 'data_args': {'batch_size': 32, 'num_workers': 10},
+ 'device': 'mps',
+ 'dist_args': {'dist_url': 'env://', 'distributed': False, 'world_size': 1},
+ 'embed_regularization': True,
+ 'embed_size': 1024,
+ 'json_files': ['retrieval/data/Clotho/json_files/train.json'],
+ 'optim_args': {'betas': [0.9, 0.999],
+                'eps': 1e-08,
+                'lr': 5e-05,
+                'momentum': 0.9,
+                'optimizer_name': 'adam',
+                'warmup_epochs': 2,
+                'warmup_steps': 0},
+ 'resume': False,
+ 'seed': 20,
+ 'temp': 0.07,
+ 'text_encoder_args': {'freeze': False, 'type': 'bert-base-uncased'},
+ 'training': {'clip_grad': 2,
+              'dropout': 0.2,
+              'epochs': 15,
+              'spec_augmentation': False}}
+ 2025-07-27 at 15:46:28 | Total numer of parameters: 143890904
+ 2025-07-27 at 15:46:28 | Size of training set: 19185, size of batches: 599
+ 2025-07-27 at 15:46:28 | Training for epoch [1]
+ 2025-07-27 at 15:48:09 | Training setting:
+{'audio_args': {'f_max': 14000,
+                'f_min': 50,
+                'hop_length': 320,
+                'max_length': 10,
+                'mono': True,
+                'n_fft': 1024,
+                'n_mels': 64,
+                'sr': 32000},
+ 'audio_encoder_args': {'freeze': False,
+                        'model': 'htsat',
+                        'pretrained': False,
+                        'spec_augment': True,
+                        'type': 'transformer'},
+ 'blacklist': 'data/json_files/blacklist/',
+ 'data_args': {'batch_size': 32, 'num_workers': 10},
+ 'device': 'mps',
+ 'dist_args': {'dist_url': 'env://', 'distributed': False, 'world_size': 1},
+ 'embed_regularization': True,
+ 'embed_size': 1024,
+ 'json_files': ['retrieval/data/Clotho/json_files/train.json'],
+ 'optim_args': {'betas': [0.9, 0.999],
+                'eps': 1e-08,
+                'lr': 5e-05,
+                'momentum': 0.9,
+                'optimizer_name': 'adam',
+                'warmup_epochs': 2,
+                'warmup_steps': 0},
+ 'resume': False,
+ 'seed': 20,
+ 'temp': 0.07,
+ 'text_encoder_args': {'freeze': False, 'type': 'bert-base-uncased'},
+ 'training': {'clip_grad': 2,
+              'dropout': 0.2,
+              'epochs': 15,
+              'spec_augmentation': False}}
+ 2025-07-27 at 15:48:09 | Total numer of parameters: 143890904
+ 2025-07-27 at 15:48:09 | Size of training set: 19185, size of batches: 599
+ 2025-07-27 at 15:48:09 | Training for epoch [1]
+ 2025-10-12 at 12:47:44 | Training setting:
+{'audio_args': {'f_max': 14000,
+                'f_min': 50,
+                'hop_length': 320,
+                'max_length': 10,
+                'mono': True,
+                'n_fft': 1024,
+                'n_mels': 64,
+                'sr': 32000},
+ 'audio_encoder_args': {'freeze': False,
+                        'model': 'htsat',
+                        'pretrained': False,
+                        'spec_augment': True,
+                        'type': 'transformer'},
+ 'blacklist': 'data/json_files/blacklist/',
+ 'data_args': {'batch_size': 32, 'num_workers': 10},
+ 'device': 'mps',
+ 'dist_args': {'dist_url': 'env://', 'distributed': False, 'world_size': 1},
+ 'embed_regularization': True,
+ 'embed_size': 1024,
+ 'json_files': ['retrieval/data/Clotho/json_files/train.json'],
+ 'optim_args': {'betas': [0.9, 0.999],
+                'eps': 1e-08,
+                'lr': 5e-05,
+                'momentum': 0.9,
+                'optimizer_name': 'adam',
+                'warmup_epochs': 2,
+                'warmup_steps': 0},
+ 'resume': False,
+ 'seed': 20,
+ 'temp': 0.07,
+ 'text_encoder_args': {'freeze': False, 'type': 'bert-base-uncased'},
+ 'training': {'clip_grad': 2,
+              'dropout': 0.2,
+              'epochs': 15,
+              'spec_augmentation': False}}
+ 2025-10-12 at 12:47:44 | Total number of parameters: 143890904
+ 2025-10-12 at 12:47:44 | Size of training set: 19185, size of batches: 599
+ 2025-10-12 at 12:47:44 | Training for epoch [1]
+ 2025-10-12 at 13:05:34 | Epoch [1] - Loss: 3.089, Time: 1070.7
+ 2025-10-12 at 13:10:46 | Clotho: Caption to audio: r1: 1.23, r5: 4.29, r10: 7.93, r50: 28.45, medr: 119.00, meanr: 200.91, mAP10: 2.736
+ 2025-10-12 at 13:10:46 | Clotho: Audio to caption: r1: 0.67, r5: 3.07, r10: 6.51, r50: 21.84, medr: 250.00, meanr: 501.03, mAP10: 0.469
+ 2025-10-12 at 13:10:48 | Training for epoch [2]
+ 2025-10-12 at 13:28:51 | Epoch [2] - Loss: 2.471, Time: 1082.2
+ 2025-10-12 at 13:33:49 | Clotho: Caption to audio: r1: 2.24, r5: 9.06, r10: 14.96, r50: 42.15, medr: 71.00, meanr: 131.96, mAP10: 5.288
+ 2025-10-12 at 13:33:49 | Clotho: Audio to caption: r1: 2.39, r5: 8.14, r10: 12.36, r50: 34.96, medr: 106.00, meanr: 269.92, mAP10: 1.506
+ 2025-10-12 at 13:33:50 | Training for epoch [3]
+ 2025-10-12 at 13:50:47 | Epoch [3] - Loss: 1.915, Time: 1016.4
+ 2025-10-12 at 13:55:42 | Clotho: Caption to audio: r1: 3.33, r5: 10.84, r10: 18.18, r50: 47.53, medr: 57.00, meanr: 118.47, mAP10: 6.723
+ 2025-10-12 at 13:55:42 | Clotho: Audio to caption: r1: 1.92, r5: 9.87, r10: 16.57, r50: 42.82, medr: 71.00, meanr: 213.94, mAP10: 1.663
+ 2025-10-12 at 13:55:43 | Training for epoch [4]
+ 2025-10-12 at 14:12:33 | Epoch [4] - Loss: 1.443, Time: 1010.0
+ 2025-10-12 at 14:17:42 | Clotho: Caption to audio: r1: 3.54, r5: 12.89, r10: 21.99, r50: 52.53, medr: 46.00, meanr: 104.11, mAP10: 7.950
+ 2025-10-12 at 14:17:42 | Clotho: Audio to caption: r1: 4.41, r5: 13.98, r10: 19.54, r50: 48.08, medr: 54.00, meanr: 156.86, mAP10: 2.639
+ 2025-10-12 at 14:17:43 | Training for epoch [5]
+ 2025-10-12 at 14:35:39 | Epoch [5] - Loss: 1.084, Time: 1075.7
+ 2025-10-12 at 14:40:54 | Clotho: Caption to audio: r1: 3.72, r5: 13.60, r10: 22.34, r50: 52.03, medr: 46.00, meanr: 104.23, mAP10: 8.145
+ 2025-10-12 at 14:40:54 | Clotho: Audio to caption: r1: 3.26, r5: 12.55, r10: 19.54, r50: 50.19, medr: 50.00, meanr: 151.98, mAP10: 2.278
+ 2025-10-12 at 14:40:54 | Training for epoch [6]
+ 2025-10-12 at 14:58:56 | Epoch [6] - Loss: 0.816, Time: 1081.4
+ 2025-10-12 at 15:04:16 | Clotho: Caption to audio: r1: 3.97, r5: 13.52, r10: 22.36, r50: 53.47, medr: 44.00, meanr: 103.25, mAP10: 8.473
+ 2025-10-12 at 15:04:16 | Clotho: Audio to caption: r1: 4.50, r5: 13.79, r10: 22.51, r50: 51.72, medr: 46.00, meanr: 142.87, mAP10: 2.869
+ 2025-10-12 at 15:04:17 | Training for epoch [7]
+ 2025-10-12 at 15:22:18 | Epoch [7] - Loss: 0.606, Time: 1081.2
+ 2025-10-12 at 15:27:17 | Clotho: Caption to audio: r1: 4.16, r5: 13.66, r10: 21.88, r50: 52.87, medr: 45.00, meanr: 100.83, mAP10: 8.405
+ 2025-10-12 at 15:27:17 | Clotho: Audio to caption: r1: 3.64, r5: 12.93, r10: 20.88, r50: 49.81, medr: 51.00, meanr: 158.80, mAP10: 2.728
+ 2025-10-12 at 15:27:17 | Training for epoch [8]
+ 2025-10-12 at 15:44:00 | Epoch [8] - Loss: 0.462, Time: 1003.3
+ 2025-10-12 at 15:48:50 | Clotho: Caption to audio: r1: 3.98, r5: 14.52, r10: 22.30, r50: 52.82, medr: 45.00, meanr: 105.71, mAP10: 8.590
+ 2025-10-12 at 15:48:50 | Clotho: Audio to caption: r1: 4.41, r5: 13.60, r10: 22.32, r50: 53.64, medr: 42.00, meanr: 136.40, mAP10: 2.810
+ 2025-10-12 at 15:48:50 | Training for epoch [9]
+ 2025-10-12 at 16:04:58 | Epoch [9] - Loss: 0.356, Time: 967.5
+ 2025-10-12 at 16:09:47 | Clotho: Caption to audio: r1: 4.18, r5: 14.44, r10: 22.76, r50: 53.75, medr: 44.00, meanr: 99.51, mAP10: 8.756
+ 2025-10-12 at 16:09:47 | Clotho: Audio to caption: r1: 4.69, r5: 14.66, r10: 23.37, r50: 53.74, medr: 45.00, meanr: 136.72, mAP10: 2.942
+ 2025-10-12 at 16:09:48 | Training for epoch [10]
+ 2025-10-12 at 16:26:17 | Epoch [10] - Loss: 0.269, Time: 988.3
+ 2025-10-12 at 16:31:08 | Clotho: Caption to audio: r1: 4.31, r5: 14.92, r10: 23.07, r50: 54.69, medr: 42.00, meanr: 99.49, mAP10: 9.085
+ 2025-10-12 at 16:31:08 | Clotho: Audio to caption: r1: 4.79, r5: 15.04, r10: 23.18, r50: 53.83, medr: 43.00, meanr: 134.13, mAP10: 2.957
+ 2025-10-12 at 16:31:10 | Training for epoch [11]
+ 2025-10-12 at 16:47:25 | Epoch [11] - Loss: 0.221, Time: 975.7
+ 2025-10-12 at 16:52:17 | Clotho: Caption to audio: r1: 4.25, r5: 14.92, r10: 24.12, r50: 54.66, medr: 42.00, meanr: 97.45, mAP10: 9.080
+ 2025-10-12 at 16:52:17 | Clotho: Audio to caption: r1: 4.41, r5: 16.57, r10: 25.19, r50: 54.02, medr: 41.00, meanr: 132.33, mAP10: 3.184
+ 2025-10-12 at 16:52:17 | Training for epoch [12]
+ 2025-10-12 at 17:08:24 | Epoch [12] - Loss: 0.174, Time: 966.5
+ 2025-10-12 at 17:13:14 | Clotho: Caption to audio: r1: 4.81, r5: 15.75, r10: 23.74, r50: 55.69, medr: 40.00, meanr: 95.37, mAP10: 9.539
+ 2025-10-12 at 17:13:14 | Clotho: Audio to caption: r1: 5.17, r5: 17.24, r10: 26.53, r50: 54.41, medr: 41.00, meanr: 125.44, mAP10: 3.363
+ 2025-10-12 at 17:13:16 | Training for epoch [13]
+ 2025-10-12 at 17:29:23 | Epoch [13] - Loss: 0.151, Time: 966.7
+ 2025-10-12 at 17:34:15 | Clotho: Caption to audio: r1: 4.60, r5: 15.54, r10: 23.87, r50: 54.85, medr: 41.00, meanr: 96.27, mAP10: 9.316
+ 2025-10-12 at 17:34:15 | Clotho: Audio to caption: r1: 5.08, r5: 15.90, r10: 24.52, r50: 55.94, medr: 37.00, meanr: 126.43, mAP10: 3.262
+ 2025-10-12 at 17:34:15 | Training for epoch [14]
+ 2025-10-12 at 17:50:16 | Epoch [14] - Loss: 0.134, Time: 961.7
+ 2025-10-12 at 17:55:05 | Clotho: Caption to audio: r1: 4.56, r5: 15.57, r10: 24.25, r50: 55.61, medr: 41.00, meanr: 96.16, mAP10: 9.491
+ 2025-10-12 at 17:55:05 | Clotho: Audio to caption: r1: 4.98, r5: 16.76, r10: 25.29, r50: 57.28, medr: 37.00, meanr: 125.18, mAP10: 3.217
+ 2025-10-12 at 17:55:05 | Training for epoch [15]
+ 2025-10-12 at 18:11:08 | Epoch [15] - Loss: 0.136, Time: 963.6
+ 2025-10-12 at 18:16:01 | Clotho: Caption to audio: r1: 4.58, r5: 15.86, r10: 24.27, r50: 55.56, medr: 40.00, meanr: 95.79, mAP10: 9.527
+ 2025-10-12 at 18:16:01 | Clotho: Audio to caption: r1: 5.17, r5: 16.38, r10: 26.15, r50: 56.61, medr: 37.00, meanr: 122.81, mAP10: 3.324
+ 2025-10-12 at 18:16:01 | Evaluation start...
+ 2025-10-12 at 18:20:52 | Clotho: Caption to audio: r1: 4.15, r5: 15.41, r10: 23.23, r50: 56.02, medr: 40.00, meanr: 96.46, mAP10: 8.914
+ 2025-10-12 at 18:20:52 | Clotho: Audio to caption: r1: 4.21, r5: 17.22, r10: 26.22, r50: 55.41, medr: 39.00, meanr: 119.38, mAP10: 3.007
+ 2025-10-19 at 17:26:10 | Training setting:
+{'audio_args': {'f_max': 14000,
+                'f_min': 50,
+                'hop_length': 320,
+                'max_length': 10,
+                'mono': True,
+                'n_fft': 1024,
+                'n_mels': 64,
+                'sr': 32000},
+ 'audio_encoder_args': {'freeze': False,
+                        'model': 'htsat',
+                        'pretrained': False,
+                        'spec_augment': True,
+                        'type': 'transformer'},
+ 'blacklist': 'data/json_files/blacklist/',
+ 'data_args': {'batch_size': 32, 'num_workers': 10},
+ 'device': 'mps',
+ 'dist_args': {'dist_url': 'env://', 'distributed': False, 'world_size': 1},
+ 'embed_regularization': True,
+ 'embed_size': 1024,
+ 'json_files': ['retrieval/data/Clotho/json_files/train.json'],
+ 'optim_args': {'betas': [0.9, 0.999],
+                'eps': 1e-08,
+                'lr': 5e-05,
+                'momentum': 0.9,
+                'optimizer_name': 'adam',
+                'warmup_epochs': 2,
+                'warmup_steps': 0},
+ 'resume': False,
+ 'seed': 20,
+ 'temp': 0.07,
+ 'text_encoder_args': {'freeze': False, 'type': 'bert-base-uncased'},
+ 'training': {'clip_grad': 2,
+              'dropout': 0.2,
+              'epochs': 15,
+              'spec_augmentation': False}}
+ 2025-10-19 at 17:26:10 | Total number of parameters: 143890904
+ 2025-10-19 at 17:26:10 | Size of training set: 19185, size of batches: 599
+ 2025-10-19 at 17:26:10 | Training for epoch [1]
+ 2025-10-23 at 11:24:28 | Training setting:
+{'audio_args': {'f_max': 14000,
+                'f_min': 50,
+                'hop_length': 320,
+                'max_length': 10,
+                'mono': True,
+                'n_fft': 1024,
+                'n_mels': 64,
+                'sr': 32000},
+ 'audio_encoder_args': {'freeze': False,
+                        'model': 'htsat',
+                        'pretrained': False,
+                        'spec_augment': True,
+                        'type': 'transformer'},
+ 'blacklist': 'data/json_files/blacklist/',
+ 'data_args': {'batch_size': 32, 'num_workers': 10},
+ 'device': 'mps',
+ 'dist_args': {'dist_url': 'env://', 'distributed': False, 'world_size': 1},
+ 'embed_regularization': True,
+ 'embed_size': 1024,
+ 'json_files': ['retrieval/data/Clotho/json_files/train.json'],
+ 'optim_args': {'betas': [0.9, 0.999],
+                'eps': 1e-08,
+                'lr': 5e-05,
+                'momentum': 0.9,
+                'optimizer_name': 'adam',
+                'warmup_epochs': 2,
+                'warmup_steps': 0},
+ 'resume': False,
+ 'seed': 20,
+ 'temp': 0.07,
+ 'text_encoder_args': {'freeze': False, 'type': 'bert-base-uncased'},
+ 'training': {'clip_grad': 2,
+              'dropout': 0.2,
+              'epochs': 15,
+              'spec_augmentation': False}}
+ 2025-10-23 at 11:24:28 | Total number of parameters: 143890904
+ 2025-10-23 at 11:24:28 | Size of training set: 19185, size of batches: 599
+ 2025-10-23 at 11:24:28 | Training for epoch [1]

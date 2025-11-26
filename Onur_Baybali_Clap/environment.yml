@@ -1,0 +1,59 @@
+name: clap_reproduction
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.10
+
+  # PyTorch (from pytorch channel)
+  - pytorch::pytorch=2.1.0
+  - pytorch::torchaudio=2.1.0
+  - pytorch::torchvision=0.16.0
+
+  # Audio processing (from conda-forge)
+  - conda-forge::librosa=0.10.0
+  - conda-forge::soundfile
+  - conda-forge::audioread
+  - conda-forge::ffmpeg
+
+  # Scientific computing
+  - numpy=1.26  # Base numpy from conda
+  - scipy=1.10.0
+  - pandas
+  - scikit-learn=1.2.1
+
+  # Utilities
+  - joblib
+  - pyyaml=6.0
+  - tqdm=4.66
+
+  # Visualization
+  - matplotlib=3.8
+  - pillow
+
+  # Pip packages
+  - pip
+  - pip:
+    - pytorch-lightning==2.2.5
+    - torchlibrosa==0.1.0
+    - pyloudnorm==0.1.1  # Optional: for LUFS/LRA features
+    - transformers==4.41.2
+    - tokenizers==0.19.1
+    - sentence-transformers==4.1.0
+    - omegaconf==2.3.0
+    - loguru==0.7.0
+    - wandb==0.16.5  # Optional: for experiment tracking
+    - datasets==2.20.0
+    - huggingface-hub==0.23.3
+    - einops==0.8.0
+
+# Installation:
+# conda env create -f environment.yml
+# conda activate clap_reproduction
+
+# Alternative (if you already have conda environment):
+# conda env update -f environment.yml --prune
+

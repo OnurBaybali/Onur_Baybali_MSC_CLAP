@@ -1,0 +1,55 @@
+# Paper Reproduction Requirements
+# Python 3.10
+
+# Core ML frameworks
+torch==2.1.0
+torchaudio==2.1.0
+torchvision==0.16.0
+pytorch-lightning==2.2.5
+
+# Audio processing
+librosa==0.10.0
+torchlibrosa==0.1.0
+audioread==3.0.0
+soundfile  # Required by librosa (version managed by conda)
+pyloudnorm==0.1.1  # Optional: for LUFS/LRA features
+
+# NLP
+transformers==4.41.2
+tokenizers==0.19.1
+sentence-transformers==4.1.0
+
+# Scientific computing
+numpy==2.2.6
+scipy==1.10.0
+pandas  # Version managed by conda
+scikit-learn==1.2.1
+
+# Configuration & utilities
+pyyaml==6.0
+omegaconf==2.3.0
+
+# Progress & logging
+tqdm==4.66.4
+wandb==0.16.5  # Optional: for experiment tracking
+loguru==0.7.0
+
+# Visualization (optional)
+matplotlib==3.5.0
+pillow==12.0.0
+
+# Data handling
+datasets==2.20.0
+huggingface-hub==0.23.3
+
+# Other utilities
+joblib  # Version managed by conda
+einops==0.8.0
+
+# Notes:
+# - Some packages (soundfile, pandas, joblib) are better installed via conda
+# - pyloudnorm is optional - only needed if extracting LUFS/LRA features
+# - wandb is optional - only needed if you want experiment tracking
+# - Install with: pip install -r requirements.txt
+# - Or use conda environment: conda env create -f environment.yml
+

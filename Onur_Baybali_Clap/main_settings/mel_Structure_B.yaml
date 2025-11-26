@@ -1,0 +1,62 @@
+device: mps
+seed: 20
+embed_size: 1024
+temp: 0.07
+# queue_size: 5120
+json_files:
+  - "retrieval/data/Clotho/json_files/train.json"
+  - "retrieval/data/Clotho/json_files/val.json"
+  - "retrieval/data/Clotho/json_files/test.json"
+resume: false
+blacklist: "data/json_files/blacklist/" # path to blacklist file
+embed_regularization: true
+
+dist_args:
+  world_size: 1 # fake value
+  dist_url: "env://" # TO CHECK
+
+audio_args:
+  sr: 32000 # for non-dac usage
+  n_fft: 1024
+  hop_length: 320
+  f_min: 50
+  f_max: 14000
+  n_mels: 64
+  max_length: 10 # htsat:10; CNN:30;
+  mono: True
+
+
+audio_encoder_args:
+  type: "mel"
+  model: "mel"
+  pretrained: False 
+  freeze: True
+  spec_augment: False
+  audio_width: 64064 # AudioFeature: [1, 1, 1001, 64] ==> 1001*64 = 64064
+
+
+data_args:
+  batch_size: 32
+  num_workers: 10
+
+
+text_encoder_args:
+  type: 'bert-base-uncased'
+  freeze: False
+
+
+optim_args:
+  lr: !!float 5e-5
+  warmup_steps: 0
+  optimizer_name: "adam"
+  betas: [0.9, 0.999]
+  eps: !!float 1e-8
+  momentum: 0.9
+  warmup_epochs: 2
+
+
+training:
+  spec_augmentation: False
+  epochs: 15
+  clip_grad: 2
+  dropout: 0.2

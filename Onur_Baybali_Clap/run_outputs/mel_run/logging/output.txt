@@ -1,0 +1,106 @@
+ 2025-06-29 at 22:16:18 | Training setting:
+{'audio_args': {'f_max': 14000,
+                'f_min': 50,
+                'hop_length': 320,
+                'max_length': 10,
+                'mono': True,
+                'n_fft': 1024,
+                'n_mels': 64,
+                'sr': 32000},
+ 'audio_encoder_args': {'audio_width': 64064,
+                        'freeze': True,
+                        'model': 'mel',
+                        'pretrained': False,
+                        'spec_augment': False,
+                        'type': 'mel'},
+ 'blacklist': 'data/json_files/blacklist/',
+ 'data_args': {'batch_size': 32, 'num_workers': 10},
+ 'device': 'mps',
+ 'dist_args': {'dist_url': 'env://', 'distributed': False, 'world_size': 1},
+ 'embed_regularization': True,
+ 'embed_size': 1024,
+ 'json_files': ['retrieval/data/Clotho/json_files/train.json',
+                'retrieval/data/Clotho/json_files/val.json',
+                'retrieval/data/Clotho/json_files/test.json'],
+ 'optim_args': {'betas': [0.9, 0.999],
+                'eps': 1e-08,
+                'lr': 5e-05,
+                'momentum': 0.9,
+                'optimizer_name': 'adam',
+                'warmup_epochs': 2,
+                'warmup_steps': 0},
+ 'resume': False,
+ 'seed': 20,
+ 'temp': 0.07,
+ 'text_encoder_args': {'freeze': False, 'type': 'bert-base-uncased'},
+ 'training': {'clip_grad': 2,
+              'dropout': 0.2,
+              'epochs': 15,
+              'spec_augmentation': False}}
+ 2025-06-29 at 22:16:18 | Total numer of parameters: 178464321
+ 2025-06-29 at 22:16:18 | Size of training set: 19185, size of batches: 599
+ 2025-06-29 at 22:16:18 | Training for epoch [1]
+ 2025-06-29 at 22:19:52 | Training statistics:	loss for epoch [1]: 3.158,	time: 214.0, lr: 0.000025.
+ 2025-06-29 at 22:21:25 | Clotho: Caption to audio: r1: 0.38, r5: 2.59, r10: 4.96, r50: 19.10, medr: 176.00, meanr: 256.06, mAP10: 1.385
+ 2025-06-29 at 22:21:25 | Clotho: Audio to caption: r1: 0.57, r5: 2.78, r10: 4.79, r50: 14.27, medr: 347.00, meanr: 642.17, mAP10: 0.397
+ 2025-06-29 at 22:21:27 | Training for epoch [2]
+ 2025-06-29 at 22:25:04 | Training statistics:	loss for epoch [2]: 2.858,	time: 216.7, lr: 0.000050.
+ 2025-06-29 at 22:26:36 | Clotho: Caption to audio: r1: 0.54, r5: 3.31, r10: 6.25, r50: 24.58, medr: 144.00, meanr: 227.44, mAP10: 1.758
+ 2025-06-29 at 22:26:36 | Clotho: Audio to caption: r1: 0.57, r5: 2.97, r10: 4.79, r50: 15.71, medr: 293.00, meanr: 562.59, mAP10: 0.466
+ 2025-06-29 at 22:26:38 | Training for epoch [3]
+ 2025-06-29 at 22:30:14 | Training statistics:	loss for epoch [3]: 2.586,	time: 216.1, lr: 0.000049.
+ 2025-06-29 at 22:31:49 | Clotho: Caption to audio: r1: 0.90, r5: 3.95, r10: 7.22, r50: 25.17, medr: 133.00, meanr: 217.21, mAP10: 2.310
+ 2025-06-29 at 22:31:49 | Clotho: Audio to caption: r1: 1.05, r5: 3.74, r10: 5.75, r50: 21.55, medr: 219.00, meanr: 438.26, mAP10: 0.681
+ 2025-06-29 at 22:31:51 | Training for epoch [4]
+ 2025-06-29 at 22:35:32 | Training statistics:	loss for epoch [4]: 2.216,	time: 221.2, lr: 0.000047.
+ 2025-06-29 at 22:37:05 | Clotho: Caption to audio: r1: 0.92, r5: 3.83, r10: 7.38, r50: 26.46, medr: 137.00, meanr: 218.45, mAP10: 2.339
+ 2025-06-29 at 22:37:05 | Clotho: Audio to caption: r1: 0.86, r5: 4.02, r10: 6.70, r50: 23.66, medr: 206.00, meanr: 414.51, mAP10: 0.744
+ 2025-06-29 at 22:37:05 | Training for epoch [5]
+ 2025-06-29 at 22:40:43 | Training statistics:	loss for epoch [5]: 1.794,	time: 217.5, lr: 0.000044.
+ 2025-06-29 at 22:42:16 | Clotho: Caption to audio: r1: 1.34, r5: 4.21, r10: 7.51, r50: 25.77, medr: 141.00, meanr: 223.64, mAP10: 2.663
+ 2025-06-29 at 22:42:16 | Clotho: Audio to caption: r1: 0.77, r5: 4.12, r10: 7.57, r50: 24.81, medr: 185.00, meanr: 367.46, mAP10: 0.599
+ 2025-06-29 at 22:42:18 | Training for epoch [6]
+ 2025-06-29 at 22:45:57 | Training statistics:	loss for epoch [6]: 1.416,	time: 218.3, lr: 0.000039.
+ 2025-06-29 at 22:47:29 | Clotho: Caption to audio: r1: 0.77, r5: 4.23, r10: 7.64, r50: 25.25, medr: 149.00, meanr: 231.98, mAP10: 2.352
+ 2025-06-29 at 22:47:29 | Clotho: Audio to caption: r1: 1.15, r5: 3.83, r10: 6.32, r50: 24.04, medr: 172.00, meanr: 374.93, mAP10: 0.576
+ 2025-06-29 at 22:47:29 | Training for epoch [7]
+ 2025-06-29 at 22:51:06 | Training statistics:	loss for epoch [7]: 1.092,	time: 216.5, lr: 0.000034.
+ 2025-06-29 at 22:52:39 | Clotho: Caption to audio: r1: 1.00, r5: 4.18, r10: 7.61, r50: 25.02, medr: 152.00, meanr: 236.98, mAP10: 2.465
+ 2025-06-29 at 22:52:39 | Clotho: Audio to caption: r1: 0.77, r5: 3.35, r10: 7.38, r50: 23.95, medr: 170.00, meanr: 382.35, mAP10: 0.622
+ 2025-06-29 at 22:52:39 | Training for epoch [8]
+ 2025-06-29 at 22:56:18 | Training statistics:	loss for epoch [8]: 0.834,	time: 219.6, lr: 0.000028.
+ 2025-06-29 at 22:57:54 | Clotho: Caption to audio: r1: 1.17, r5: 4.41, r10: 7.66, r50: 25.96, medr: 150.00, meanr: 230.66, mAP10: 2.677
+ 2025-06-29 at 22:57:54 | Clotho: Audio to caption: r1: 0.86, r5: 4.02, r10: 8.05, r50: 23.47, medr: 165.00, meanr: 364.78, mAP10: 0.620
+ 2025-06-29 at 22:57:54 | Training for epoch [9]
+ 2025-06-29 at 23:01:33 | Training statistics:	loss for epoch [9]: 0.634,	time: 219.4, lr: 0.000022.
+ 2025-06-29 at 23:03:05 | Clotho: Caption to audio: r1: 0.94, r5: 4.20, r10: 7.32, r50: 24.83, medr: 155.00, meanr: 237.40, mAP10: 2.456
+ 2025-06-29 at 23:03:05 | Clotho: Audio to caption: r1: 0.67, r5: 3.83, r10: 6.80, r50: 23.85, medr: 170.00, meanr: 371.62, mAP10: 0.489
+ 2025-06-29 at 23:03:05 | Training for epoch [10]
+ 2025-06-29 at 23:06:41 | Training statistics:	loss for epoch [10]: 0.502,	time: 216.1, lr: 0.000016.
+ 2025-06-29 at 23:08:15 | Clotho: Caption to audio: r1: 0.92, r5: 3.77, r10: 7.34, r50: 25.13, medr: 152.00, meanr: 236.17, mAP10: 2.310
+ 2025-06-29 at 23:08:15 | Clotho: Audio to caption: r1: 0.38, r5: 3.16, r10: 6.61, r50: 24.23, medr: 176.00, meanr: 367.62, mAP10: 0.532
+ 2025-06-29 at 23:08:15 | Training for epoch [11]
+ 2025-06-29 at 23:11:52 | Training statistics:	loss for epoch [11]: 0.390,	time: 216.6, lr: 0.000011.
+ 2025-06-29 at 23:13:24 | Clotho: Caption to audio: r1: 0.80, r5: 3.97, r10: 7.30, r50: 24.96, medr: 151.00, meanr: 239.03, mAP10: 2.280
+ 2025-06-29 at 23:13:24 | Clotho: Audio to caption: r1: 0.86, r5: 3.35, r10: 7.76, r50: 24.14, medr: 175.00, meanr: 365.39, mAP10: 0.595
+ 2025-06-29 at 23:13:24 | Training for epoch [12]
+ 2025-06-29 at 23:17:01 | Training statistics:	loss for epoch [12]: 0.324,	time: 216.8, lr: 0.000006.
+ 2025-06-29 at 23:18:34 | Clotho: Caption to audio: r1: 0.86, r5: 4.12, r10: 7.28, r50: 24.64, medr: 153.00, meanr: 238.61, mAP10: 2.354
+ 2025-06-29 at 23:18:34 | Clotho: Audio to caption: r1: 0.67, r5: 4.12, r10: 7.85, r50: 24.43, medr: 175.00, meanr: 363.23, mAP10: 0.594
+ 2025-06-29 at 23:18:34 | Training for epoch [13]
+ 2025-06-29 at 23:22:09 | Training statistics:	loss for epoch [13]: 0.289,	time: 215.1, lr: 0.000003.
+ 2025-06-29 at 23:23:41 | Clotho: Caption to audio: r1: 0.98, r5: 4.04, r10: 7.36, r50: 24.73, medr: 150.00, meanr: 238.87, mAP10: 2.440
+ 2025-06-29 at 23:23:41 | Clotho: Audio to caption: r1: 1.15, r5: 3.45, r10: 7.28, r50: 24.90, medr: 169.00, meanr: 362.74, mAP10: 0.634
+ 2025-06-29 at 23:23:43 | Training for epoch [14]
+ 2025-06-29 at 23:27:19 | Training statistics:	loss for epoch [14]: 0.257,	time: 216.4, lr: 0.000001.
+ 2025-06-29 at 23:28:52 | Clotho: Caption to audio: r1: 1.07, r5: 4.33, r10: 7.41, r50: 24.73, medr: 150.00, meanr: 238.07, mAP10: 2.519
+ 2025-06-29 at 23:28:52 | Clotho: Audio to caption: r1: 0.86, r5: 4.50, r10: 7.57, r50: 25.00, medr: 167.00, meanr: 361.61, mAP10: 0.654
+ 2025-06-29 at 23:28:52 | Training for epoch [15]
+ 2025-06-29 at 23:32:27 | Training statistics:	loss for epoch [15]: 0.249,	time: 215.2, lr: 0.000000.
+ 2025-06-29 at 23:33:58 | Clotho: Caption to audio: r1: 0.98, r5: 4.20, r10: 7.36, r50: 24.87, medr: 151.00, meanr: 237.93, mAP10: 2.457
+ 2025-06-29 at 23:33:58 | Clotho: Audio to caption: r1: 1.05, r5: 4.12, r10: 8.05, r50: 24.81, medr: 169.00, meanr: 360.81, mAP10: 0.657
+ 2025-06-29 at 23:33:58 | Evaluation start...
+ 2025-06-29 at 23:34:00 | Evaluation best Clotho model... epoch:13
+ 2025-06-29 at 23:35:33 | Clotho: Caption to audio: r1: 0.96, r5: 4.23, r10: 7.29, r50: 24.46, medr: 164.00, meanr: 252.68, mAP10: 2.437
+ 2025-06-29 at 23:35:33 | Clotho: Audio to caption: r1: 1.15, r5: 4.78, r10: 9.00, r50: 26.22, medr: 160.00, meanr: 385.75, mAP10: 0.682
+ 2025-06-29 at 23:35:33 | Done.
