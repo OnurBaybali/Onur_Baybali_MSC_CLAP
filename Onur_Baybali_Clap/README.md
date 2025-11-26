@@ -168,14 +168,4 @@ python live_retrieval_demo.py \
 - All models trained on Clotho dataset
 - Training logs will be saved in `outputs/{exp_name}/logging/`
 - Best models will be saved in `outputs/{exp_name}/models/`
-- `ase_*` files have been renamed to `audio_embedding_*` for clarity
-- Testing scripts show per-token and per-feature contributions for interpretability
-
-## Citation
-
-If you use this code, please cite the thesis:
-
-```
-[Add thesis citation here]
-```
 
