@@ -1,6 +1,8 @@
-# Paper Reproduction Package
+# Paper Reproduction Repository
 
-This package contains the code to reproduce the experiments from the thesis on statistical perceptual audio representations for CLAP models.
+This package contains the code to reproduce the experiments from the thesis  "Improving Contrastive Language-Audio
+Pretraining (CLAP) with Perceptual and
+Temporal Feature Engineering " 
 
 ## Directory Structure
 
