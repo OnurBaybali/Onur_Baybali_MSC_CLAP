@@ -165,6 +165,6 @@ python live_retrieval_demo.py \
 
 ## Notes
 
-- All models trained on Clotho dataset
+- All models trained on Clotho dataset. (https://zenodo.org/records/3490684) https://arxiv.org/abs/1910.09387
 - Training logs will be saved in `outputs/{exp_name}/logging/`
 - Best models will be saved in `outputs/{exp_name}/models/`
