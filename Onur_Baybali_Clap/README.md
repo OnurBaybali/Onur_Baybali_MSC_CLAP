@@ -48,21 +48,18 @@ paper_reproduction/
 - **Training script:** `training_scripts/train_baseline.py`
 - **Model:** HTSAT Swin Transformer (pretrained=False)
 - **Input:** Log-mel spectrogram (64,064D)
-- **Performance:** 8.914% mAP@10 (Text-to-Audio)
 
 ### 2. Mel-based
 - **Config:** `main_settings/mel.yaml`
 - **Training script:** `training_scripts/train_mel.py`
 - **Model:** Direct log-mel features + MLP
 - **Input:** Log-mel spectrogram (64,064D)
-- **Performance:** Results in thesis
 
 ### 3. Perceptual Feature-based
 - **Config:** `main_settings/perceptual.yaml`
 - **Training script:** `training_scripts/train_perceptual.py`
 - **Model:** Handcrafted perceptual features + MLP
 - **Input:** 536 perceptual features
-- **Performance:** 8.918% mAP@10 (Text-to-Audio)
 
 ## Usage
 
